@@ -33,9 +33,10 @@ impl Statement {
     // since the statement pointer might be invalidated if a memory resize
     // takes place.
     pub fn prepare(
-        raw_connection: &RawConnection,
+        raw_connection: &mut RawConnection,
         sql: &str,
         is_cached: PrepareForCache,
+        _: &[SqliteType],
     ) -> QueryResult<Self> {
         let sqlite3 = crate::get_sqlite_unchecked();
 
