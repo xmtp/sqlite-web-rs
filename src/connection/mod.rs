@@ -289,8 +289,9 @@ impl WasmSqliteConnection {
             &source,
             &WasmSqlite,
             &[],
-            |sql, is_cached| Statement::prepare(raw_connection, sql, is_cached),
-            instrumentation.as_mut(),
+            raw_connection,
+            Statement::prepare,
+            &mut *instrumentation,
         ) {
             Ok(statement) => statement,
             Err(e) => {

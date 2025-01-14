@@ -18,10 +18,12 @@ targets = ["wasm32-unknown-unknown"]
 
 [dependencies]
 talc = { version = "4.4", default-features = false, features = ["lock_api"] }
-diesel = { version = "2.2", features = ["i-implement-a-third-party-backend-and-opt-into-breaking-changes"] }
+diesel = { version = "2.2", features = [
+  "i-implement-a-third-party-backend-and-opt-into-breaking-changes",
+] }
 diesel_derives = "2.2"
-wasm-bindgen = "=0.2.99"
-wasm-bindgen-futures = "0.4"
+wasm-bindgen = "=0.2.100"
+wasm-bindgen-futures = "0.4.50"
 js-sys = { version = "0.3" }
 tracing = { version = "0.1", default-features = false }
 tokio = { version = "1.38", default-features = false, features = ["sync"] }
@@ -30,16 +32,19 @@ serde-wasm-bindgen = "0.6"
 thiserror = "2"
 
 [dev-dependencies]
-wasm-bindgen-test = "=0.3.49"
-console_error_panic_hook = { version = "0.1"}
+wasm-bindgen-test = "=0.3.50"
+console_error_panic_hook = { version = "0.1" }
 rand = "0.8"
 getrandom = { version = "0.2", features = ["js"] }
 web-sys = { version = "0.3", features = ["console"] }
 chrono = { version = "0.4", features = ["wasmbind", "serde"] }
 diesel_migrations = "2.2"
-diesel = { version = "2.2", features = ["chrono"]}
+diesel = { version = "2.2", features = ["chrono"] }
 tracing-wasm = { version = "0.2" }
-tracing-subscriber = { version = "0.3", features = ["env-filter", "tracing-log"] }
+tracing-subscriber = { version = "0.3", features = [
+  "env-filter",
+  "tracing-log",
+] }
 
 [patch.crates-io]
 diesel = { git = "https://github.com/diesel-rs/diesel", branch = "master" }
