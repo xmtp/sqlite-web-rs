@@ -13,7 +13,7 @@ use wasm_bindgen::prelude::*;
 ///         v if *ffi::SQLITE_DONE == v {
 ///             /* SQLITE_DONE */
 ///         },
-///         v if *ffi:SQLITE_ROW == v {
+///         v if *ffi::SQLITE_ROW == v {
 ///             /* SQLITE_ROW */
 ///         }
 ///     }

@@ -1,4 +1,4 @@
-//! General tests for migrations/diesel ORM/persistant databases
+//! General tests for migrations/diesel ORM/persistent databases
 use crate::common::prelude::*;
 use sqlite_web::dsl::RunQueryDsl;
 
