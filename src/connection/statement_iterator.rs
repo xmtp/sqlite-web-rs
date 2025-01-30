@@ -111,8 +111,8 @@ impl<'stmt, 'query> Iterator for StatementIterator<'stmt, 'query> {
                 // by checking if our Rc owns the data or not
                 if let Some(last_row_ref) = Rc::get_mut(last_row) {
                     // We own the statement, there is no other reference here.
-                    // This means we don't need to copy out values from the sqlite provided
-                    // datastructures for now
+                    // This means we don't need to copy out values from the SQLite-provided
+                    // data structures for now
                     // We don't need to use the runtime borrowing system of the RefCell here
                     // as we have a mutable reference, so all of this below is checked at compile time
                     if let PrivateSqliteRow::Direct(ref mut stmt) = last_row_ref.get_mut() {
