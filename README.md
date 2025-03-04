@@ -5,9 +5,6 @@
 > [Spxg/sqlite-wasm-rs](https://github.com/Spxg/sqlite-wasm-rs) directly with
 > [diesel](https://github.com/diesel-rs/diesel/tree/master/examples/sqlite/wasm)
 
-For information about XMTP identities, see
-[Identity in XMTP](https://xmtp.org/identity).
-
 The documentation below is provided for historical reference only.
 
 # Diesel Backend for SQLite and WASM
