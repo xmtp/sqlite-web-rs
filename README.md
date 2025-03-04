@@ -1,3 +1,12 @@
+![Status](https://img.shields.io/badge/Deprecated-brown)
+
+> [!CAUTION]
+> This repo is no longer maintained. Prefer to use
+> [Spxg/sqlite-wasm-rs](https://github.com/Spxg/sqlite-wasm-rs) directly with
+> [diesel](https://github.com/diesel-rs/diesel/tree/master/examples/sqlite/wasm)
+
+The documentation below is provided for historical reference only.
+
 # Diesel Backend for SQLite and WASM
 
 Use SQLite with Diesel ORM in your web apps!
